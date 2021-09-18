@@ -1,0 +1,232 @@
+:root{
+    --navbarFont: 'Macondo', cursive;
+    --headersFont: 'Fredericka the Great', cursive;
+    --mainTextFont: 'Indie Flower', cursive;
+    --mainPageColor1: maroon;
+    --mainPageColor2: peru;
+    --mainPageColor3: wheat;
+}
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: url(../media/HomePage/mainPageBg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav ul{
+    width: 88%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+}
+ul li a{
+    font-family: var(--navbarFont);
+    text-decoration: none;
+    font-size: 5vh;
+    font-weight: bold;
+    color: black;
+    border: 4px solid transparent;
+    transition: 0.4s;
+}
+#currentPage, ul li a:hover{
+    color: var(--mainPageColor1);
+    border: 4px solid var(--mainPageColor1);
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+#shopCartIcon{
+    position: fixed;
+    top: 2vh;
+    right: 7.5%;
+    z-index: 100;
+}
+#shopCartIcon a{
+    padding: 8px;
+    border-color: var(--mainPageColor1);
+    border-radius: 50%;
+    color: var(--mainPageColor1);
+    background: var(--mainPageColor3);
+}
+#shopCartIcon a:hover{
+    color: var(--mainPageColor3);
+    background: var(--mainPageColor1);
+    border-color: var(--mainPageColor3);
+}
+#pageDescription{
+    margin-top: 5%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#pageDescription h1{
+    align-self: center;
+    text-align: center;
+    width: 30%;
+    font-family: var(--headersFont);
+    font-size: 14vh;
+    color: var(--mainPageColor1);
+    text-shadow:5px 5px 8px black;
+}
+#pageDescription h2{
+    width: 50%;
+    margin-top: 2%;
+    font-family: var(--mainTextFont);
+    font-size: 4vh;
+}
+span{
+    color: var(--mainPageColor1);
+    ;
+}
+
+/* #sortByOptions{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+#sortByOptions h2{
+    font-family: var(--headersFont);
+    font-size: 35px;
+    color: var(--mainPageColor1);
+}
+#sortByOptions button{
+    margin-left: 5%;
+    width: fit-content;
+    background: var(--mainPageColor3);
+    padding: 0px 2px;
+    border: 2px solid var(--mainPageColor1);
+    font-family: var(--navbarFont);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#sortByOptions button:hover{
+    background: var(--mainPageColor1);
+    border-color: var(--mainPageColor3);
+    color: var(--mainPageColor3);
+} */
+
+
+
+#container{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height:fit-content;
+}
+.recordCard{
+    margin-bottom: 5%;
+    padding: 1%;
+    width: 28%;
+    border: 4px double black;   
+    border-radius: 10%;
+    height: 45vh;
+    display: flex;
+    background: linear-gradient(225deg, rgba(205,133,63,1) 15%, rgba(245,222,179,1) 75%);
+    text-align: center;
+}
+.recordCard h1{
+    font-size: 4vh;
+    font-family: var(--headersFont);
+}
+.recordCard h2{
+    font-size: 3.7vh;
+    font-family: var(--headersFont);
+    color: var(--mainPageColor1);
+}
+.recordCard p{
+    font-family: var(--mainTextFont);
+    font-size: 2.7vh;
+    font-weight: bold;
+}
+/* .recordCard:nth-child(2n){
+    background: rgba(128, 0, 0, 0.7);
+}
+.recordCard:nth-child(2n) h2{
+    color: peru;
+}
+.recordCard:nth-child(2n) .addToCartBtn, .recordCard:nth-child(2n) .removeFromCartBtn{
+    border-color: peru;
+} */
+.recordInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+}
+.cardBtns{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+}
+.addToCartBtn, .removeFromCartBtn{
+    padding: 8px 2px;
+    background: wheat;
+    color: var(--mainPageColor1);
+    border: 3px solid var(--mainPageColor1);
+    font-family: var(--navbarFont);
+    font-size:14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.addToCartBtn:hover, .removeFromCartBtn:hover{
+    background: var(--mainPageColor1);
+    color: wheat;
+    border-color: wheat;
+}
+.recordImages{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.record2Pics{
+    position: absolute;
+    width: 95%;
+    height: 70%;
+    border-radius: 10%;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+.record2Pics:last-of-type:hover{
+    opacity: 0;
+}
+footer{
+    position: relative;
+    width: 100%;
+}
+#rightsFooter{
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: Wheat;
+}
+#rightsFooter a{
+    font-size: 2.5vh;
+    margin-left: 5vw;
+    text-decoration: none;
+    color: Wheat;
+}
+#rightsFooter p{
+    font-size: 2.5vh;
+}

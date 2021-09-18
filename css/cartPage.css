@@ -1,0 +1,83 @@
+:root{
+    --navbarFont: 'Macondo', cursive;
+    --headersFont: 'Fredericka the Great', cursive;
+    --mainTextFont: 'Indie Flower', cursive;
+    --mainPageColor1: maroon;
+    --mainPageColor2: peru;
+    --mainPageColor3: wheat;
+}
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: url(../media/HomePage/mainPageBg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav ul{
+    width: 88%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+}
+ul li a{
+    font-family: var(--navbarFont);
+    text-decoration: none;
+    font-size: 5vh;
+    font-weight: bold;
+    color: black;
+    border: 4px solid transparent;
+    transition: 0.4s;
+}
+ul li a:hover{
+    color: var(--mainPageColor1);
+    border: 4px solid var(--mainPageColor1);
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+#shopCartIcon{
+    position: fixed;
+    top: 2vh;
+    right: 7.5%;
+    z-index: 100;
+}
+#shopCartIcon a{
+    padding: 8px;
+    border-color: var(--mainPageColor3);
+    border-radius: 50%;
+    color: var(--mainPageColor3);
+    background: var(--mainPageColor1);
+}
+
+
+
+
+
+
+footer{
+    position: relative;
+    width: 100%;
+}
+#rightsFooter{
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: Wheat;
+}
+#rightsFooter a{
+    font-size: 2.5vh;
+    margin-left: 5vw;
+    text-decoration: none;
+    color: Wheat;
+}
+#rightsFooter p{
+    font-size: 2.5vh;
+}
