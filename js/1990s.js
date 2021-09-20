@@ -25,3 +25,82 @@ for (let i = 0; i < STORE_RECORDS.length; i++) {
         }
     }
 };
+
+
+const addToCartBtn = document.getElementsByClassName("addToCartBtn");
+const removeFromCartBtn = document.getElementsByClassName("removeFromCartBtn");
+let popUpBox = document.getElementById("popUpBox");
+let currentPageCart = [];
+let cartPriceCounter = 0;
+
+
+for (let i = 0; i < addToCartBtn.length; i++) {
+    addToCartBtn[i].onclick = () => {
+        currentPageCart.push(STORE_RECORDS[i+15]);
+        cartPriceCounter += STORE_RECORDS[i+15].price;
+        popUpBox.innerHTML =
+            `<article id="popUpAlert">
+                <table>
+                    <tr>
+                        <td>Item Added:</td>
+                        <td>${STORE_RECORDS[i+15].recordName}</td>
+                    </tr>
+                    <tr>
+                        <td>Item Price:</td>
+                        <td>${STORE_RECORDS[i+15].price}$</td>
+                    </tr>
+                    <tr>
+                        <td>Total Price:</td>
+                        <td>${cartPriceCounter}$</td>
+                    </tr>
+                </table>
+            </article>`
+        let intervalCounter = 0;
+        let intervalId = window.setInterval(() => {
+            intervalCounter++;
+            popUpBox.style.left = "0%";
+            if (intervalCounter >= 9) {
+                window.clearTimeout(intervalId);
+                popUpBox.style.left = "-100%";
+            }
+        }, 250)
+    }
+}
+
+for (let i = 0; i < addToCartBtn.length; i++) {
+    removeFromCartBtn[i].onclick = () => {
+        for (let j = 0; j < currentPageCart.length; j++) {
+            if (currentPageCart[j] == STORE_RECORDS[i+15]) {
+                currentPageCart.splice(j, 1);
+                cartPriceCounter -= STORE_RECORDS[i+15].price;
+                popUpBox.innerHTML =
+                    `<article id="popUpAlert">
+                        <table>
+                            <tr>
+                                <td>Item removed:</td>
+                                <td>${STORE_RECORDS[i+15].recordName}</td>
+                            </tr>
+                            <tr>
+                                <td>Item Price:</td>
+                                <td>${STORE_RECORDS[i+15].price}$</td>
+                            </tr>
+                            <tr>
+                                <td>Total Price:</td>
+                                <td>${cartPriceCounter}$</td>
+                            </tr>
+                        </table>
+                    </article>`
+                let intervalCounter = 0;
+                let intervalId = window.setInterval(() => {
+                    intervalCounter++;
+                    popUpBox.style.left = "0%";
+                    if (intervalCounter >= 9) {
+                        window.clearTimeout(intervalId);
+                        popUpBox.style.left = "-100%";
+                    }
+                }, 250)
+                break;
+            }
+        }
+    }
+}

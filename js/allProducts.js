@@ -209,4 +209,214 @@ const STORE_RECORDS = [
             "../media/AllRecords/1990s/ItsDarkAndHellIsHot_Cover.jpg",
         ]
     },
+    {
+        id: 31, category: "2000s", recordName: "Madvillainy", artistName: "Madvillain", description: "Released on March 23, 2004.", price: 40,
+        images: [
+            "../media/AllRecords/2000s/Madvillainy_Artist.jpg",
+            "../media/AllRecords/2000s/Madvillainy_Cover.jpg",
+        ]
+    },
+    {
+        id: 32, category: "2000s", recordName: "The Marshall Mathers LP", artistName: "Eminem", description: "Released on May 23, 2000.", price: 50,
+        images: [
+            "../media/AllRecords/2000s/TMMLP_Artist.jpg",
+            "../media/AllRecords/2000s/TMMLP_Cover.jpg",
+        ]
+    },
+    {
+        id: 33, category: "2000s", recordName: "The College Dropout", artistName: "Kanye West", description: "Released on February 10, 2004.", price: 55,
+        images: [
+            "../media/AllRecords/2000s/TheCollegeDropout_Artist.jpg",
+            "../media/AllRecords/2000s/TheCollegeDropout_Cover.jpg",
+        ]
+    },
+    {
+        id: 34, category: "2000s", recordName: "The Blueprint", artistName: "Jay-Z", description: "Released on September 11, 2001.", price: 50,
+        images: [
+            "../media/AllRecords/2000s/TheBlueprint_Artist.jpg",
+            "../media/AllRecords/2000s/TheBlueprint_Cover.jpg",
+        ]
+    },
+    {
+        id: 35, category: "2000s", recordName: "Get Rich or Die Tryin'", artistName: "50 Cent", description: "Released on February 6, 2003.", price: 40,
+        images: [
+            "../media/AllRecords/2000s/GetRichOrDieTryin_Artist.jpg",
+            "../media/AllRecords/2000s/GetRichOrDieTryin_Cover.jpg",
+        ]
+    },
+    {
+        id: 36, category: "2000s", recordName: "Tha Carter III", artistName: "Lil Wayne", description: "Released on June 10, 2008.", price: 40,
+        images: [
+            "../media/AllRecords/2000s/ThaCarter3_Artist.jpg",
+            "../media/AllRecords/2000s/ThaCarter3_Cover.jpg",
+        ]
+    },
+    {
+        id: 37, category: "2000s", recordName: "Trap Muzik", artistName: "T.I.", description: "Released on August 19, 2003.", price: 30,
+        images: [
+            "../media/AllRecords/2000s/TrapMuzik_Artist.jpg",
+            "../media/AllRecords/2000s/TrapMuzik_Cover.jpg",
+        ]
+    },
+    {
+        id: 38, category: "2000s", recordName: "Stankonia", artistName: "Outkast", description: "Released on October 31, 2000.", price: 40,
+        images: [
+            "../media/AllRecords/2000s/Stankonia_Artist.jpg",
+            "../media/AllRecords/2000s/Stankonia_Cover.jpg",
+        ]
+    },
+    {
+        id: 39, category: "2000s", recordName: "Stillmatic", artistName: "Nas", description: "Released on December 18, 2001.", price: 35,
+        images: [
+            "../media/AllRecords/2000s/Stillmatic_Artist.jpg",
+            "../media/AllRecords/2000s/Stillmatic_Cover.jpg",
+        ]
+    },
+    {
+        id: 40, category: "2000s", recordName: "Be", artistName: "Common", description: "Released on May 24, 2005.", price: 30,
+        images: [
+            "../media/AllRecords/2000s/Be_Artist.jpg",
+            "../media/AllRecords/2000s/Be_Cover.jpg",
+        ]
+    },
+    {
+        id: 41, category: "2000s", recordName: "The Eminem Show", artistName: "Eminem", description: "Released on June 4, 2002.", price: 35,
+        images: [
+            "../media/AllRecords/2000s/TMMLP_Artist.jpg",
+            "../media/AllRecords/2000s/TheEminemShow_Cover.jpg",
+        ]
+    },
+    {
+        id: 42, category: "2000s", recordName: "Graduation", artistName: "Kanye West", description: "Released on September 11, 2007.", price: 45,
+        images: [
+            "../media/AllRecords/2000s/TheCollegeDropout_Artist.jpg",
+            "../media/AllRecords/2000s/Graduation_Cover.jpg",
+        ]
+    },
+    {
+        id: 43, category: "2000s", recordName: "The Documentary", artistName: "The Game", description: "Released on January 18, 2005.", price: 35,
+        images: [
+            "../media/AllRecords/2000s/Documentary_Artist.jpg",
+            "../media/AllRecords/2000s/Documentary_Cover.jpg",
+        ]
+    },
+    {
+        id: 44, category: "2000s", recordName: "The Fix", artistName: "Scarface", description: "Released on August 6, 2002.", price: 30,
+        images: [
+            "../media/AllRecords/2000s/TheFix_Artist.jpg",
+            "../media/AllRecords/2000s/TheFix_Cover.jpg",
+        ]
+    },
+    {
+        id: 45, category: "2000s", recordName: "Phrenology", artistName: "The Roots", description: "Released on November 26, 2002.", price: 30,
+        images: [
+            "../media/AllRecords/2000s/Phrenology_Artist.jpg",
+            "../media/AllRecords/2000s/Phrenology_Cover.jpg",
+        ]
+    },
+    {
+        id: 46, category: "2010s", recordName: "My Beautiful Dark Twisted Fantasy", artistName: "Kanye West", description: "Released on November 22, 2010.", price: 55,
+        images: [
+            "../media/AllRecords/2010s/MBDTF_Artist.jpg",
+            "../media/AllRecords/2010s/MBDTF_Cover.jpg",
+        ]
+    },
+    {
+        id: 47, category: "2010s", recordName: "To Pimp a Butterfly", artistName: "Kendrick Lamar", description: "Released on March 15, 2015.", price: 55,
+        images: [
+            "../media/AllRecords/2010s/TPAB_Artist.jpg",
+            "../media/AllRecords/2010s/TPAB_Cover.jpg",
+        ]
+    },
+    {
+        id: 48, category: "2010s", recordName: "2014 Forest Hills Drive", artistName: "J. Cole", description: "Released on December 9, 2014.", price: 50,
+        images: [
+            "../media/AllRecords/2010s/FHD_Artist.jpg",
+            "../media/AllRecords/2010s/FHD_Cover.jpg",
+        ]
+    },
+    {
+        id: 49, category: "2010s", recordName: "Nothing Was the Same", artistName: "Drake", description: "Released on September 24, 2013.", price: 50,
+        images: [
+            "../media/AllRecords/2010s/NWTS_Artist.jpg",
+            "../media/AllRecords/2010s/NWTS_Cover.jpg",
+        ]
+    },
+    {
+        id: 50, category: "2010s", recordName: "Astroworld", artistName: "Travis Scott", description: "Released on August 3, 2018.", price: 45,
+        images: [
+            "../media/AllRecords/2010s/Astroworld_Artist.jpg",
+            "../media/AllRecords/2010s/Astroworld_Cover.jpg",
+        ]
+    },
+    {
+        id: 51, category: "2010s", recordName: "4:44", artistName: "Jay-Z", description: "Released on  June 30, 2017.", price: 45,
+        images: [
+            "../media/AllRecords/2010s/444_Artist.jpg",
+            "../media/AllRecords/2010s/444_Cover.jpg",
+        ]
+    },
+    {
+        id: 52, category: "2010s", recordName: "Flower Boy", artistName: "Tyler, the Creator", description: "Released on July 21, 2017.", price: 35,
+        images: [
+            "../media/AllRecords/2010s/FlowerBoy_Artist.jpg",
+            "../media/AllRecords/2010s/FlowerBoy_Cover.jpg",
+        ]
+    },
+    {
+        id: 53, category: "2010s", recordName: "DAMN.", artistName: "Kendrick Lamar", description: "Released on April 14, 2017.", price: 50,
+        images: [
+            "../media/AllRecords/2010s/TPAB_Artist.jpg",
+            "../media/AllRecords/2010s/DAMN_Cover.jpg",
+        ]
+    },
+    {
+        id: 54, category: "2010s", recordName: "KOD", artistName: "J. Cole", description: "Released on April 20, 2018.", price: 40,
+        images: [
+            "../media/AllRecords/2010s/FHD_Artist.jpg",
+            "../media/AllRecords/2010s/KOD_Cover.jpg",
+        ]
+    },
+    {
+        id: 55, category: "2010s", recordName: "The Life of Pablo", artistName: "Kanye West", description: "Released on February 14, 2016.", price: 40,
+        images: [
+            "../media/AllRecords/2010s/MBDTF_Artist.jpg",
+            "../media/AllRecords/2010s/TLOP_Cover.jpg",
+        ]
+    },
+    {
+        id: 56, category: "2010s", recordName: "Culture", artistName: "Migos", description: "Released on January 27, 2017.", price: 35,
+        images: [
+            "../media/AllRecords/2010s/Culture_Artist.jpg",
+            "../media/AllRecords/2010s/Culture_Cover.jpg",
+        ]
+    },
+    {
+        id: 57, category: "2010s", recordName: "Good Kid, M.A.A.D City", artistName: "Kendrick Lamar", description: "Released on October 22, 2012.", price: 45,
+        images: [
+            "../media/AllRecords/2010s/TPAB_Artist.jpg",
+            "../media/AllRecords/2010s/GKMC_Cover.jpg",
+        ]
+    },
+    {
+        id: 58, category: "2010s", recordName: "Summertime '06", artistName: "Vince Staples", description: "Released on June 30, 2015.", price: 30,
+        images: [
+            "../media/AllRecords/2010s/Summertime06_Artist.jpg",
+            "../media/AllRecords/2010s/Summertime06_Cover.jpg",
+        ]
+    },
+    {
+        id: 59, category: "2010s", recordName: "Long. Live. ASAP", artistName: "ASAP Rocky", description: "Released on January 15, 2013.", price: 35,
+        images: [
+            "../media/AllRecords/2010s/LLA_Artist.jpg",
+            "../media/AllRecords/2010s/LLA_Cover.jpg",
+        ]
+    },
+    {
+        id: 60, category: "2010s", recordName: "DS2", artistName: "Future", description: "Released on July 17, 2015.", price: 40,
+        images: [
+            "../media/AllRecords/2010s/DS2_Artist.jpg",
+            "../media/AllRecords/2010s/DS2_Cover.jpg",
+        ]
+    }
 ];

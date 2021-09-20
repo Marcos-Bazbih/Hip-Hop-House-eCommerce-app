@@ -1,11 +1,11 @@
-let container1980sPage = document.getElementById("container");
+let container2000sPage = document.getElementById("container");
 let recordCard = document.getElementsByClassName("recordCard");
 let recordImages = document.getElementsByClassName("recordImages");
 
 
 for (let i = 0; i < STORE_RECORDS.length; i++) {
-    if (STORE_RECORDS[i].category == "1980s") {
-        container1980sPage.innerHTML +=
+    if (STORE_RECORDS[i].category == "2000s") {
+        container2000sPage.innerHTML +=
             `<article class="recordCard">
                 <div class="recordInfo">
                 <h2>${STORE_RECORDS[i].artistName}</h2>
@@ -36,18 +36,18 @@ let cartPriceCounter = 0;
 
 for (let i = 0; i < addToCartBtn.length; i++) {
     addToCartBtn[i].onclick = () => {
-        currentPageCart.push(STORE_RECORDS[i]);
-        cartPriceCounter += STORE_RECORDS[i].price;
+        currentPageCart.push(STORE_RECORDS[i+30]);
+        cartPriceCounter += STORE_RECORDS[i+30].price;
         popUpBox.innerHTML =
             `<article id="popUpAlert">
                 <table>
                     <tr>
                         <td>Item Added:</td>
-                        <td>${STORE_RECORDS[i].recordName}</td>
+                        <td>${STORE_RECORDS[i+30].recordName}</td>
                     </tr>
                     <tr>
                         <td>Item Price:</td>
-                        <td>${STORE_RECORDS[i].price}$</td>
+                        <td>${STORE_RECORDS[i+30].price}$</td>
                     </tr>
                     <tr>
                         <td>Total Price:</td>
@@ -70,19 +70,19 @@ for (let i = 0; i < addToCartBtn.length; i++) {
 for (let i = 0; i < addToCartBtn.length; i++) {
     removeFromCartBtn[i].onclick = () => {
         for (let j = 0; j < currentPageCart.length; j++) {
-            if (currentPageCart[j] == STORE_RECORDS[i]) {
+            if (currentPageCart[j] == STORE_RECORDS[i+30]) {
                 currentPageCart.splice(j, 1);
-                cartPriceCounter -= STORE_RECORDS[i].price;
+                cartPriceCounter -= STORE_RECORDS[i+30].price;
                 popUpBox.innerHTML =
                     `<article id="popUpAlert">
                         <table>
                             <tr>
                                 <td>Item removed:</td>
-                                <td>${STORE_RECORDS[i].recordName}</td>
+                                <td>${STORE_RECORDS[i+30].recordName}</td>
                             </tr>
                             <tr>
                                 <td>Item Price:</td>
-                                <td>${STORE_RECORDS[i].price}$</td>
+                                <td>${STORE_RECORDS[i+30].price}$</td>
                             </tr>
                             <tr>
                                 <td>Total Price:</td>

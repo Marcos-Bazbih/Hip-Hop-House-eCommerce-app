@@ -64,7 +64,6 @@ ul li a{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 #pageDescription h1{
     align-self: center;
     text-align: center;
@@ -113,8 +112,38 @@ span{
     color: var(--mainPageColor3);
 } */
 
-
-
+#popUpBox{
+    z-index: 1000;
+    position:fixed;
+    width: 100%;
+    height: 100%;    
+    left: -100%;
+    top: 0%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#popUpAlert{
+    width: 40%;
+    height: 40%;
+    background: var(--mainPageColor1);
+    border: 4px double var(--mainPageColor3);
+}
+#popUpAlert table{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#popUpAlert td{
+    color: var(--mainPageColor3);
+    font-family: var(--headersFont);
+    font-size: 4vh;
+    font-weight: bold;
+}
+#popUpAlert td:nth-child(2n){
+    color: var(--mainPageColor2);
+}
 #container{
     margin-top: 5%;
     display: flex;
@@ -148,15 +177,6 @@ span{
     font-size: 2.7vh;
     font-weight: bold;
 }
-/* .recordCard:nth-child(2n){
-    background: rgba(128, 0, 0, 0.7);
-}
-.recordCard:nth-child(2n) h2{
-    color: peru;
-}
-.recordCard:nth-child(2n) .addToCartBtn, .recordCard:nth-child(2n) .removeFromCartBtn{
-    border-color: peru;
-} */
 .recordInfo{
     display: flex;
     flex-direction: column;
