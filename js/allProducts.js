@@ -156,8 +156,8 @@ const STORE_RECORDS = [
     {
         id: 23, category: "1990s", recordName: "The Miseducation of Lauryn Hill", artistName: "Lauryn Hill", description: "Released on August 25, 1998.", price: 35,
         images: [
-            "../media/AllRecords/1990s/TheMiseducationOfLauryn Hill_Artist.jpg",
-            "../media/AllRecords/1990s/TheMiseducationOfLauryn Hill_Cover.jpg",
+            "../media/AllRecords/1990s/TheMiseducationOfLaurynHill_Artist.jpg",
+            "../media/AllRecords/1990s/TheMiseducationOfLaurynHill_Cover.jpg",
         ]
     },
     {

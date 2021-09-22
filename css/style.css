@@ -94,7 +94,7 @@ ul li a{
     width: 100%;
     height: 40vh;
 }
-#categoriesTitle h1, #NewReleasesTitle h1{
+#categoriesTitle h1, #recommendedTitle h1{
     font-size: 12vh;
 }
 #categoriesBox{
@@ -144,7 +144,7 @@ ul li a{
 .categoriesCards:hover> img{
     filter: brightness(180%);
 }
-#NewReleasesTitle{
+#recommendedTitle{
     background: url(../media/HomePage/newReleasesBg.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -156,7 +156,7 @@ ul li a{
     width: 100%;
     height: 40vh;
 }
-#NewReleasesContainer{
+#recommendedContainer{
     align-self: flex-start;
     display: flex;
     width: 400%;
@@ -179,7 +179,7 @@ ul li a{
     align-items: center;
     justify-content: space-around;
 }
-.newReleasesCards{
+.recommendedCards{
     width: 30%;
     height: 70%;
     border: 4px double var(--mainPageColor2);
@@ -191,20 +191,20 @@ ul li a{
     justify-content: space-evenly;
     position: relative;
 }
-.newReleasesCards img:first-of-type{
+.recommendedCards img:first-of-type{
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: inherit;
     z-index: -10;
-    filter: grayscale(100%) blur(3px);
+    filter: grayscale(100%) blur(4px);
 }
-.newReleasesCards img:last-of-type{
+.recommendedCards img:last-of-type{
     border-radius: 5%;
     width: 50%;
     height: 50%;
 }
-.newReleasesCards h2{
+.recommendedCards h2{
     font-size: 5vh;
     color: var(--mainPageColor2);
 }

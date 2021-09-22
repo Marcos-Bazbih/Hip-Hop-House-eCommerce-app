@@ -13,8 +13,8 @@ for (let i = 0; i < STORE_RECORDS.length; i++) {
                     <p>${STORE_RECORDS[i].description}</p>
                     <h2>${STORE_RECORDS[i].price}$</h2>
                     <div class="cardBtns">
-                       <button class="addToCartBtn">Add To Cart</button>
-                       <button class="removeFromCartBtn">Remove From Cart</button>
+                    <button class="addToCartBtn"><i class="fas fa-cart-plus"></i></button>
+                    <button class="removeFromCartBtn"><i class="fas fa-trash-alt"></i></button>
                     </div>
                 </div>
                 <div class="recordImages"></div>
