@@ -301,7 +301,6 @@ footer{
 /* *****--media query--***** */
 
 
-
 @media screen and (max-width:1024px){
     .categoriesCards{
         width: 22%;
@@ -428,7 +427,7 @@ footer{
         font-size: 4vh;
     }
     .recommendedCards{
-        width: 70%;
+        width: 80%;
     }
 }
 @media screen and (max-width:415px){
