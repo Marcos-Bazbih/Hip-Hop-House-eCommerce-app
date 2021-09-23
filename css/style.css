@@ -39,7 +39,7 @@ ul li a{
 }
 #shopCartIcon{
     position: fixed;
-    top: 2vh;
+    top: 5vh;
     right: 7.5%;
     z-index: 100;
 }  
@@ -295,27 +295,165 @@ footer{
 #rightsFooter p{
     font-size: 2.5vh;
 }
-/* 
-@media screen and (max-width:935px){
-    #mainPageWelcome h1{
-        font-size: 9vh 
+
+
+
+/* *****--media query--***** */
+
+
+
+@media screen and (max-width:1024px){
+    .categoriesCards{
+        width: 22%;
+        height: 55%;
     }
-    #mainPageWelcome h2{
-        font-size: 6vh 
+    .recommendedCards{
+        height: 65%;
+    }
+    .recommendedCards h2{
+        font-size: 4.5vh;
     }
 }
-@media screen and (max-width:801px){
-    #mainPageWelcome h2{
-        font-size: 5vh 
+@media screen and (max-width:936px){
+    .categoriesCards{
+        height: 50%;
+    }
+    .recommendedCards{
+        height: 60%;
+    }
+    .mainHeaders{
+        font-size: 12vh;
+    }
+    .secondaryHeaders{
+        text-align: center;
+    }   
+}
+@media screen and (max-width:835px){
+    #recommendedTitle h1{
+        font-size: 10vh;
+    }
+    .recommendedCards{
+        width: 40%;
     }
 }
-@media screen and (max-width:668px){
-    #mainPageWelcome h2{
-        font-size: 4vh 
+@media screen and (max-width:800px){
+    #registerBox h2{
+        font-size: 4vh;
+    }
+    #categoriesBox{
+        height: 120vh;
+    }
+    .categoriesCards{
+        height: 35%;
+        width: 35%;
     }
 }
-@media screen and (max-width:540px){
-    #mainPageWelcome h2{
+@media screen and (max-width:700px){
+    .mainHeaders{
+        font-size: 10vh;
+        text-align: center;
+    }
+    .secondaryHeaders{
         font-size: 6vh;
     }
-} */
+    #shopCartIcon a{
+        font-size: 5vh;
+    }
+    nav ul{
+        width: 100%;
+    }
+    #shopCartIcon{
+        top: 10vh;
+        right: 2.5%;
+    }
+    #recommendedTitle h1{
+        font-size: 8vh;
+        text-align: center;
+    }
+    .recommendedCards h2{
+        font-size: 4vh; 
+    }
+}
+@media screen and (max-width:600px){
+    ul li a{
+        font-size: 4vh;
+    }
+    .categoriesCards{
+        width: 45%;
+    }
+    #registerEmail{
+        width: 60%;
+    }
+}
+@media screen and (max-width:530px){
+    .sliderBox{
+        flex-direction: column;
+    }
+    #recommendedContainer{
+        animation: slider 20s infinite ease-in-out;
+    }
+    .recommendedCards{
+        width: 60%;
+        height: 48%;
+    }
+    @keyframes slider {
+        0%{}
+        33.33333%{transform: translate(-25%);}
+        66.66666%{transform: translate(-50%);}
+        100%{transform: translate(-75%);}
+    }
+    #registerBtn, #registerEmail{
+        font-size: 2.5vh;
+    }
+}
+@media screen and (max-width:500px){
+    #categoriesBox{
+        height: 100vh;
+    }
+    #categoriesTitle h1{
+        font-size: 10vh;
+    }
+}
+@media screen and (max-width:425px){
+    .mainHeaders{
+        font-size: 9vh;
+    }
+    .secondaryHeaders{
+        font-size: 5vh;
+    }
+    ul li a{
+        font-size: 3.5vh;
+    }
+    #shopCartIcon a{
+        font-size: 4vh;
+    }
+    .recommendedCards{
+        width: 70%;
+    }
+}
+@media screen and (max-width:415px){
+    #categoriesTitle h1{
+        font-size: 8vh;
+    }
+    #categoriesBox{
+        height: 200vh;
+    }
+    .categoriesCards{
+        width: 60%;
+        height: 20%;
+    }
+}
+@media screen and (max-width:350px){
+    ul li a{
+        font-size: 3vh;
+    }
+    .categoriesCards{
+        width: 70%;
+    }
+    #recommendedTitle h1{
+        font-size: 7vh;
+    }
+    #rightsFooter a,  #rightsFooter p{
+        font-size: 2vh;
+    }
+}

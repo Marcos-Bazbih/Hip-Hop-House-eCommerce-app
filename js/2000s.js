@@ -60,7 +60,7 @@ for (let i = 0; i < addToCartBtn.length; i++) {
             intervalCounter++;
             popUpBox.style.left = "0%";
             if (intervalCounter >= 9) {
-                window.clearTimeout(intervalId);
+                window.clearInterval(intervalId);
                 popUpBox.style.left = "-100%";
             }
         }, 250)
