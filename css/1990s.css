@@ -248,3 +248,97 @@ footer{
 #rightsFooter p{
     font-size: 2.5vh;
 }
+
+
+
+
+
+@media screen and (max-width:1001px){
+    .recordCard{
+        width: 40%;
+    }
+}
+@media screen and (max-width:701px){
+    #popUpAlert{
+        width: 55%;
+        height: 50%;
+    }
+    nav ul{
+        width: 100%;
+    }
+    #shopCartIcon a{
+        font-size: 5vh;
+    }
+    #shopCartIcon{
+        top: 10vh;
+        right: 2.5%;
+    }
+    #pageDescription{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #pageDescription h2{
+        text-align: center;
+        width: 100%;
+    }
+    #pageDescription h1{
+        width: 100%;
+    }
+    .recordCard{
+        width: 65%;
+        height: 55vh;
+    }
+    .recordCard h1, .recordCard h2{
+        font-size: 4vh;
+    }
+    #container{
+        margin-bottom: 5%;
+    }
+}
+@media screen and (max-width:551px){
+    #popUpAlert{
+        width: 75%;
+    }
+    ul li a{
+        font-size: 4vh;
+    }
+    .recordCard{
+        width: 75%;
+    }
+}
+@media screen and (max-width:451px){
+    #pageDescription h1{
+        font-size: 12vh;
+    }
+    #pageDescription h2{
+        font-size: 3.5vh;
+    }
+    .recordCard{
+        width: 85%;
+        height: 50vh;
+    }
+}
+@media screen and (max-width:401px){
+    ul li a{
+        font-size: 3.5vh;
+    }
+    #popUpAlert{
+        width: 85%;
+    }
+    .recordCard{
+        width: 90%;
+    }
+}
+@media screen and (max-width:376px){
+    .recordCard{
+        width: 95%;
+    }
+    .recordCard h1{
+        font-size: 3.5vh;
+    }
+    #rightsFooter{
+        font-size: 2vh;
+    }
+}

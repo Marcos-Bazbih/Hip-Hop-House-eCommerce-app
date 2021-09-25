@@ -73,6 +73,7 @@ ul li a:hover{
     margin-top: 2%;
     margin-bottom: 5%;
     background: rgba(0, 0, 0, 0.8);
+    position: relative;
 }
 #emptyCartMsg{
     font-size: 12vh;
@@ -88,21 +89,30 @@ ul li a:hover{
     align-items: center;
     justify-content: space-around;
     font-family: var(--headersFont);
+    position: absolute;
+    right: 5%;
+    top: 0;
 }
 #totalAmount h1{
     font-size: 7vh;
     color: var(--mainPageColor2);
 }
-#totalAmount h2{
+#totalAmountNumber{
     font-size: 6vh;
     color: var(--mainPageColor3);
+}
+#freeShipping{
+    font-size: 3vh;
+    color: var(--mainPageColor2);
 }
 #myCartTable table{
     padding: 25px;
     width: 60%;
-    height: 100%;
     text-align: center;
     font-family: var(--navbarFont);
+    position: absolute;
+    top: 5%;
+    left: 5%;
 }
 #myCartTable table tr{
     height: 25%;
@@ -119,7 +129,7 @@ ul li a:hover{
 }
 #myCartTable img{
     width: 50%;
-    height: 80%;
+    height: fit-content;
     border-radius: 20%;
 }
 #myCartTable button{
