@@ -235,24 +235,15 @@ footer{
     align-items: center;
     width: 100%;
     height: 5vh;
-    bottom: 0;
     background: rgba(0, 0, 0, 0.55);
     color: Wheat;
     font-size: 2.5vh;
-
 }
 #rightsFooter a{
     margin-left: 5vw;
     text-decoration: none;
     color: Wheat;
 }
-
-
-
-
-
-
-
 @media screen and (max-width:1001px){
     .recordCard{
         width: 40%;

@@ -66,20 +66,19 @@ ul li a:hover{
 }
 #myCartTable{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 65vh;
     margin-top: 2%;
     margin-bottom: 5%;
     background: rgba(0, 0, 0, 0.8);
-    position: relative;
 }
 #emptyCartMsg{
     font-size: 12vh;
     font-weight: 900;
     font-family: var(--navbarFont);
     color: var(--mainPageColor3);
+    align-self: center;
 }
 #totalAmount{
     height: 100%;
@@ -89,9 +88,8 @@ ul li a:hover{
     align-items: center;
     justify-content: space-around;
     font-family: var(--headersFont);
-    position: absolute;
-    right: 5%;
-    top: 0;
+    text-align: center;
+    border-left: 5px var(--mainPageColor3) double;
 }
 #totalAmount h1{
     font-size: 7vh;
@@ -106,16 +104,16 @@ ul li a:hover{
     color: var(--mainPageColor2);
 }
 #myCartTable table{
-    padding: 25px;
-    width: 60%;
+    height: fit-content;
+    width: 70%;
     text-align: center;
     font-family: var(--navbarFont);
-    position: absolute;
-    top: 5%;
-    left: 5%;
+}
+#myCartTable table tr:first-child{
+    height: 5vh;
 }
 #myCartTable table tr{
-    height: 25%;
+    height: 20vh;
 }
 #myCartTable table th{
     color: var(--mainPageColor2);
@@ -127,9 +125,15 @@ ul li a:hover{
     width: 25%;
     font-size: 3vh;
 }
+#myCartTable table td:nth-child(3){
+    width: 20%;
+}
+#myCartTable table td:last-child{
+    width: 30%;
+}
 #myCartTable img{
     width: 50%;
-    height: fit-content;
+    height: 80%;
     border-radius: 20%;
 }
 #myCartTable button{
@@ -141,22 +145,141 @@ ul li a:hover{
     background: var(--mainPageColor3);
     cursor: pointer;
 }
+footer{
+    position: relative;
+    width: 100%;
+}
 #rightsFooter{
+    position: absolute;
     display: flex;
     justify-content:center;
     align-items: center;
     width: 100%;
     height: 5vh;
-    bottom: 0;
     background: rgba(0, 0, 0, 0.55);
     color: Wheat;
+    font-size: 2.5vh;
 }
 #rightsFooter a{
-    font-size: 2.5vh;
     margin-left: 5vw;
     text-decoration: none;
     color: Wheat;
 }
-#rightsFooter p{
-    font-size: 2.5vh;
+@media screen and (max-width:850px){
+    #myCartTable img{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:740px){
+    #myCartTable table{
+        width: 75%;
+    }
+    #totalAmount{
+        width: 25%;
+    }
+    #myCartTable table td{
+        font-size: 2.5vh;
+    }
+    #myCartTable button{
+        font-size: 3vh;
+    }
+    #totalAmount h1{
+        font-size: 5.5vh;
+    }
+    #totalAmountNumber{
+        font-size: 5vh;
+    }
+}
+@media screen and (max-width:670px){
+    nav ul{
+        width: 100%;
+    }
+    #shopCartIcon a{
+        font-size: 5vh;
+    }
+    #shopCartIcon{
+        top: 10vh;
+        right: 2.5%;
+    }
+    #myCartTable img{
+        width: 65%;
+        height: 65%;
+    }
+}
+@media screen and (max-width:600px){
+    #pageDescription h1{
+        font-size: 12vh;
+    }
+    ul li a{
+        font-size: 4vh;
+    }
+    #myCartTable table th{
+        font-size: 3vh;
+    }
+    #myCartTable{
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width:560px){
+    #myCartTable table td:nth-child(3){
+        width: 10%;
+    }
+    #myCartTable table td:last-child{
+        width: 40%;
+    }
+    #myCartTable img{
+        width: 80%;
+        height: 70%;
+    }
+    #totalAmount h1{
+        font-size: 4.5vh;
+    }
+}
+@media screen and (max-width:445px){
+    #shopCartIcon{
+        top: 25vh;
+    }
+    #shopCartIcon a{
+        font-size: 4vh;
+    }
+    #myCartTable table td{
+        font-size: 2vh;
+    }
+    #myCartTable button{
+        font-size: 2.5vh;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #myCartTable img{
+        width: 90%;
+        height: 60%;
+    }
+    #totalAmount h1{
+        font-size: 4vh;
+    }
+    #rightsFooter{
+        font-size: 2vh;
+    }
+}
+@media screen and (max-width:350px){
+    ul li a{
+        font-size: 3.5vh;
+    }
+    #myCartTable table th{
+        font-size: 2.5vh;
+    }
+    #totalAmount h1{
+        font-size: 3vh;
+    }
+    #myCartTable button{
+        font-size: 2.5vh;
+        margin-right: 2.5px;
+        margin-left: 2.5px;
+    }
+    #myCartTable img{
+        width: 100%;
+        height: 50%;
+    }
 }

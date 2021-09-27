@@ -165,7 +165,7 @@ span{
     text-align: center;
 }
 .recordCard h1{
-    font-size: 4vh;
+    font-size: 3.5vh;
     font-family: var(--headersFont);
 }
 .recordCard h2{
@@ -193,11 +193,11 @@ span{
 }
 .addToCartBtn, .removeFromCartBtn{
     border-radius: 50%;
-    padding: 10px 15px;
+    padding: 8px 13px;
     background: wheat;
     color: var(--mainPageColor1);
     border: 3px solid var(--mainPageColor1);
-    font-size:24px;
+    font-size:20px;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -236,23 +236,15 @@ footer{
     align-items: center;
     width: 100%;
     height: 5vh;
-    bottom: 0;
     background: rgba(0, 0, 0, 0.55);
     color: Wheat;
+    font-size: 2.5vh;
 }
 #rightsFooter a{
-    font-size: 2.5vh;
     margin-left: 5vw;
     text-decoration: none;
     color: Wheat;
 }
-#rightsFooter p{
-    font-size: 2.5vh;
-}
-
-
-
-
 @media screen and (max-width:1001px){
     .recordCard{
         width: 40%;

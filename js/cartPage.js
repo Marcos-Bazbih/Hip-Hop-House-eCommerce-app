@@ -40,9 +40,9 @@ myCartTable.innerHTML =
             </td>
         </tr>
         <tr class="tableRow">
-            <td class="tableItemImg"><img src=${STORE_RECORDS[22].images[1]} alt=""></td>
-            <td class="tableItemTitle">${STORE_RECORDS[22].recordName} - ${STORE_RECORDS[22].artistName}</td>
-            <td class="tableItemPrice">${STORE_RECORDS[22].price}$</td>
+            <td class="tableItemImg"><img src=${STORE_RECORDS[34].images[1]} alt=""></td>
+            <td class="tableItemTitle">${STORE_RECORDS[34].recordName} - ${STORE_RECORDS[34].artistName}</td>
+            <td class="tableItemPrice">${STORE_RECORDS[34].price}$</td>
             <td class="quantityTd">
                 <button class="addToCartBtn">+</button>
                 <span class="quantityNumber">1</span> 
