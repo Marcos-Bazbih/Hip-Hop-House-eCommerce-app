@@ -1,16 +1,16 @@
 const STORE_RECORDS = [
     {
-        id: 1, category: "1980s", recordName: "Paid In Full", artistName: "ERIC B. & RAKIM", description: "Released on July 7, 1987.", price: 35,
-        images: [
-            "../media/AllRecords/1980s/PaidInFull_Artist.jpg",
-            "../media/AllRecords/1980s/PaidInFull_Cover.jpg",
-        ]
-    },
-    {
-        id: 2, category: "1980s", recordName: "Straight Outta Compton", artistName: "N.W.A", description: "Released on August 8, 1988.", price: 45,
+        id: 1, category: "1980s", recordName: "Straight Outta Compton", artistName: "N.W.A", description: "Released on August 8, 1988.", price: 45,
         images: [
             "../media/AllRecords/1980s/StraightOuttaCompton_Artist.jpg",
             "../media/AllRecords/1980s/StraightOuttaCompton_Cover.jpg",
+        ]
+    },
+    {
+        id: 2, category: "1980s", recordName: "Paid In Full", artistName: "ERIC B. & RAKIM", description: "Released on July 7, 1987.", price: 35,
+        images: [
+            "../media/AllRecords/1980s/PaidInFull_Artist.jpg",
+            "../media/AllRecords/1980s/PaidInFull_Cover.jpg",
         ]
     },
     {
@@ -133,19 +133,20 @@ const STORE_RECORDS = [
         ]
     },
     {
-        id: 20, category: "1990s", recordName: "Enter the Wu-Tang", artistName: "Wu-Tang Clan", description: "Released on November 9, 1993.", price: 50,
+        id: 20, category: "1990s", recordName: "Doggystyle", artistName: "Snoop Dogg", description: "Released on November 23, 1993.", price: 35,
+        images: [
+            "../media/AllRecords/1990s/Doggystyle_Artist.jpg",
+            "../media/AllRecords/1990s/Doggystyle_Cover.jpg",
+        ]
+    },
+    {
+        id: 21, category: "1990s", recordName: "Enter the Wu-Tang", artistName: "Wu-Tang Clan", description: "Released on November 9, 1993.", price: 50,
         images: [
             "../media/AllRecords/1990s/EnterTheWuTang_Artist.jpg",
             "../media/AllRecords/1990s/EnterTheWuTang_Cover.jpg",
         ]
     },
-    {
-        id: 21, category: "1990s", recordName: "The Infamous", artistName: "Mobb Deep", description: "Released on April 25, 1995.", price: 40,
-        images: [
-            "../media/AllRecords/1990s/TheInfamous_Artist.jpg",
-            "../media/AllRecords/1990s/TheInfamous_Cover.jpg",
-        ]
-    },
+    
     {
         id: 22, category: "1990s", recordName: "ATLiens", artistName: "Outkast", description: "Released on August 27, 1996.", price: 45,
         images: [
@@ -175,10 +176,10 @@ const STORE_RECORDS = [
         ]
     },
     {
-        id: 26, category: "1990s", recordName: "Doggystyle", artistName: "Snoop Dogg", description: "Released on November 23, 1993.", price: 35,
+        id: 26, category: "1990s", recordName: "The Infamous", artistName: "Mobb Deep", description: "Released on April 25, 1995.", price: 40,
         images: [
-            "../media/AllRecords/1990s/Doggystyle_Artist.jpg",
-            "../media/AllRecords/1990s/Doggystyle_Cover.jpg",
+            "../media/AllRecords/1990s/TheInfamous_Artist.jpg",
+            "../media/AllRecords/1990s/TheInfamous_Cover.jpg",
         ]
     },
     {
@@ -210,10 +211,10 @@ const STORE_RECORDS = [
         ]
     },
     {
-        id: 31, category: "2000s", recordName: "Madvillainy", artistName: "Madvillain", description: "Released on March 23, 2004.", price: 40,
+        id: 31, category: "2000s", recordName: "Get Rich or Die Tryin'", artistName: "50 Cent", description: "Released on February 6, 2003.", price: 40,
         images: [
-            "../media/AllRecords/2000s/Madvillainy_Artist.jpg",
-            "../media/AllRecords/2000s/Madvillainy_Cover.jpg",
+            "../media/AllRecords/2000s/GetRichOrDieTryin_Artist.jpg",
+            "../media/AllRecords/2000s/GetRichOrDieTryin_Cover.jpg",
         ]
     },
     {
@@ -238,10 +239,10 @@ const STORE_RECORDS = [
         ]
     },
     {
-        id: 35, category: "2000s", recordName: "Get Rich or Die Tryin'", artistName: "50 Cent", description: "Released on February 6, 2003.", price: 40,
+        id: 35, category: "2000s", recordName: "Madvillainy", artistName: "Madvillain", description: "Released on March 23, 2004.", price: 40,
         images: [
-            "../media/AllRecords/2000s/GetRichOrDieTryin_Artist.jpg",
-            "../media/AllRecords/2000s/GetRichOrDieTryin_Cover.jpg",
+            "../media/AllRecords/2000s/Madvillainy_Artist.jpg",
+            "../media/AllRecords/2000s/Madvillainy_Cover.jpg",
         ]
     },
     {
@@ -252,10 +253,10 @@ const STORE_RECORDS = [
         ]
     },
     {
-        id: 37, category: "2000s", recordName: "Trap Muzik", artistName: "T.I.", description: "Released on August 19, 2003.", price: 30,
+        id: 37, category: "2000s", recordName: "The Eminem Show", artistName: "Eminem", description: "Released on June 4, 2002.", price: 35,
         images: [
-            "../media/AllRecords/2000s/TrapMuzik_Artist.jpg",
-            "../media/AllRecords/2000s/TrapMuzik_Cover.jpg",
+            "../media/AllRecords/2000s/TMMLP_Artist.jpg",
+            "../media/AllRecords/2000s/TheEminemShow_Cover.jpg",
         ]
     },
     {
@@ -280,10 +281,10 @@ const STORE_RECORDS = [
         ]
     },
     {
-        id: 41, category: "2000s", recordName: "The Eminem Show", artistName: "Eminem", description: "Released on June 4, 2002.", price: 35,
+        id: 41, category: "2000s", recordName: "Trap Muzik", artistName: "T.I.", description: "Released on August 19, 2003.", price: 30,
         images: [
-            "../media/AllRecords/2000s/TMMLP_Artist.jpg",
-            "../media/AllRecords/2000s/TheEminemShow_Cover.jpg",
+            "../media/AllRecords/2000s/TrapMuzik_Artist.jpg",
+            "../media/AllRecords/2000s/TrapMuzik_Cover.jpg",
         ]
     },
     {
@@ -329,7 +330,7 @@ const STORE_RECORDS = [
         ]
     },
     {
-        id: 48, category: "2010s", recordName: "2014 Forest Hills Drive", artistName: "J. Cole", description: "Released on December 9, 2014.", price: 50,
+        id: 48, category: "2010s", recordName: "2014 Forest Hills Drive", artistName: "J. Cole", description: "Released on December 9, 2014.", price: 45,
         images: [
             "../media/AllRecords/2010s/FHD_Artist.jpg",
             "../media/AllRecords/2010s/FHD_Cover.jpg",

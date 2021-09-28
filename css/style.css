@@ -122,16 +122,10 @@ ul li a{
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: 0.5s;
-}
-.categoriesCards:last-of-type img{
-    top: 20%;
-    border-radius: 0%;
-    height: 60%;
-    width: 85%;
+    transition: 0.3s;
 }
 .categoriesCards h2{
-    transition: 0.5s;
+    transition: 0.3s;
     color: var(--mainPageColor3);
 }
 .categoriesCards:hover{
@@ -142,7 +136,7 @@ ul li a{
     color: var(--mainPageColor1);
 }
 .categoriesCards:hover> img{
-    filter: brightness(180%);
+    filter: brightness(150%);
 }
 #recommendedTitle{
     background: url(../media/HomePage/newReleasesBg.jpg);
@@ -183,7 +177,7 @@ ul li a{
     width: 30%;
     height: 70%;
     border: 4px double var(--mainPageColor2);
-    background: rgba(0, 0, 0, 0.677);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 30%;
     display: flex;
     flex-direction: column;
@@ -235,7 +229,6 @@ ul li a{
 }
 #registerEmail{
     width: 40%;
-    padding: 2vh 1vw;
     background: var(--mainPageColor3);
     color: var(--mainPageColor1);
     border: 3px solid transparent;
@@ -255,7 +248,7 @@ ul li a{
 #registerBtn{
     width: fit-content;
     background: var(--mainPageColor1);
-    padding: 2vh 1vw;
+    padding: 10px;
     color: var(--mainPageColor3);
     border: 3px solid transparent;
     font-family: var(--navbarFont);
@@ -285,17 +278,17 @@ footer{
     bottom: 0;
     background: rgba(0, 0, 0, 0.55);
     color: var(--mainPageColor3);
+    font-size: 2.5vh;
 }
 #rightsFooter a{
-    font-size: 2.5vh;
     margin-left: 5vw;
     text-decoration: none;
     color: var(--mainPageColor3);
+    transition: 0.1s;
 }
-#rightsFooter p{
-    font-size: 2.5vh;
+#rightsFooter a:hover{
+    color: var(--mainPageColor2);
 }
-
 @media screen and (max-width:1024px){
     .categoriesCards{
         width: 22%;

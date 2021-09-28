@@ -1,5 +1,5 @@
-let registerForm = document.getElementById("registerForm");
-let registerEmail = document.getElementById("registerEmail");
+const registerForm = document.getElementById("registerForm");
+const registerEmail = document.getElementById("registerEmail");
 
 const newsletterClub = [];
 let isUserInClub;

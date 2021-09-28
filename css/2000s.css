@@ -83,36 +83,34 @@ ul li a{
 span{
     color: var(--mainPageColor1);
 }
-
-/* #sortByOptions{
-    margin-top: 5%;
+#sortByOptions{
+    margin: 5% 0%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 50%;
+    width: 100%;
 }
 #sortByOptions h2{
     font-family: var(--headersFont);
-    font-size: 35px;
+    font-size: 5vh;
     color: var(--mainPageColor1);
 }
 #sortByOptions button{
-    margin-left: 5%;
-    width: fit-content;
+    margin-left: 0.5%;
     background: var(--mainPageColor3);
     padding: 0px 2px;
-    border: 2px solid var(--mainPageColor1);
+    border: 3px solid var(--mainPageColor1);
     font-family: var(--navbarFont);
-    font-size: 20px;
+    font-size: 3vh;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 #sortByOptions button:hover{
     background: var(--mainPageColor1);
     border-color: var(--mainPageColor3);
     color: var(--mainPageColor3);
-} */
-
+}
 #popUpBox{
     z-index: 1000;
     position:fixed;
@@ -146,7 +144,6 @@ span{
     color: var(--mainPageColor2);
 }
 #container{
-    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -194,7 +191,7 @@ span{
 .addToCartBtn, .removeFromCartBtn{
     border-radius: 50%;
     padding: 8px 13px;
-    background: wheat;
+    background: var(--mainPageColor3);
     color: var(--mainPageColor1);
     border: 3px solid var(--mainPageColor1);
     font-size:20px;
@@ -203,8 +200,8 @@ span{
 }
 .addToCartBtn:hover, .removeFromCartBtn:hover{
     background: var(--mainPageColor1);
-    color: wheat;
-    border-color: wheat;
+    color: var(--mainPageColor3);
+    border-color: var(--mainPageColor3);
 }
 .recordImages{
     position: relative;
@@ -237,14 +234,21 @@ footer{
     width: 100%;
     height: 5vh;
     background: rgba(0, 0, 0, 0.55);
-    color: Wheat;
+    color: var(--mainPageColor3);
     font-size: 2.5vh;
 }
 #rightsFooter a{
     margin-left: 5vw;
     text-decoration: none;
-    color: Wheat;
+    color: var(--mainPageColor3);
+    transition: 0.1s;
 }
+#rightsFooter a:hover{
+    color: var(--mainPageColor2);
+}
+
+
+
 @media screen and (max-width:1001px){
     .recordCard{
         width: 40%;
@@ -290,6 +294,16 @@ footer{
     }
 }
 @media screen and (max-width:551px){
+    #sortByOptions{
+        flex-direction: column;
+        align-items: center;
+    }
+    #sortByOptions button{
+        width: 50%;
+        padding: 7px 0px;
+        margin-left: 0%;
+        margin-top: 1%;
+    }
     #popUpAlert{
         width: 75%;
     }

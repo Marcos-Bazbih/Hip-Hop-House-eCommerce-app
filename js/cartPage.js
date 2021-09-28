@@ -20,9 +20,9 @@ myCartTable.innerHTML =
             <th>QUANTITY</th>
         </tr>
         <tr class="tableRow">
-            <td class="tableItemImg"><img src=${STORE_RECORDS[47].images[1]} alt=""></td>
-            <td class="tableItemTitle">${STORE_RECORDS[47].recordName} - ${STORE_RECORDS[47].artistName}</td>
-            <td class="tableItemPrice">${STORE_RECORDS[47].price}$</td>
+            <td class="tableItemImg"><img src=${STORE_RECORDS[49].images[1]} alt=""></td>
+            <td class="tableItemTitle">${STORE_RECORDS[49].recordName} - ${STORE_RECORDS[49].artistName}</td>
+            <td class="tableItemPrice">${STORE_RECORDS[49].price}$</td>
             <td class="quantityTd">
                 <button class="addToCartBtn">+</button>
                 <span class="quantityNumber">2</span> 
@@ -30,9 +30,9 @@ myCartTable.innerHTML =
             </td>
         </tr>
         <tr class="tableRow">
-            <td class="tableItemImg"><img src=${STORE_RECORDS[1].images[1]} alt=""></td>
-            <td class="tableItemTitle">${STORE_RECORDS[1].recordName} - ${STORE_RECORDS[1].artistName}</td>
-            <td class="tableItemPrice">${STORE_RECORDS[1].price}$</td>
+            <td class="tableItemImg"><img src=${STORE_RECORDS[17].images[1]} alt=""></td>
+            <td class="tableItemTitle">${STORE_RECORDS[17].recordName} - ${STORE_RECORDS[17].artistName}</td>
+            <td class="tableItemPrice">${STORE_RECORDS[17].price}$</td>
             <td class="quantityTd">
                 <button class="addToCartBtn">+</button>
                 <span class="quantityNumber">3</span> 
@@ -40,9 +40,9 @@ myCartTable.innerHTML =
             </td>
         </tr>
         <tr class="tableRow">
-            <td class="tableItemImg"><img src=${STORE_RECORDS[34].images[1]} alt=""></td>
-            <td class="tableItemTitle">${STORE_RECORDS[34].recordName} - ${STORE_RECORDS[34].artistName}</td>
-            <td class="tableItemPrice">${STORE_RECORDS[34].price}$</td>
+            <td class="tableItemImg"><img src=${STORE_RECORDS[36].images[1]} alt=""></td>
+            <td class="tableItemTitle">${STORE_RECORDS[36].recordName} - ${STORE_RECORDS[36].artistName}</td>
+            <td class="tableItemPrice">${STORE_RECORDS[36].price}$</td>
             <td class="quantityTd">
                 <button class="addToCartBtn">+</button>
                 <span class="quantityNumber">1</span> 
