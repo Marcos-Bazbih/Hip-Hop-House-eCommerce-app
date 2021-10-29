@@ -20,7 +20,7 @@ myCartTable.innerHTML =
             <th>QUANTITY</th>
         </tr>
         <tr class="tableRow">
-            <td class="tableItemImg"><img src=${STORE_RECORDS[49].images[1]} alt=""></td>
+            <td class="tableItemImg"><img src=${STORE_RECORDS[49].images[0]} alt=""></td>
             <td class="tableItemTitle">${STORE_RECORDS[49].recordName} - ${STORE_RECORDS[49].artistName}</td>
             <td class="tableItemPrice">${STORE_RECORDS[49].price}$</td>
             <td class="quantityTd">
@@ -30,7 +30,7 @@ myCartTable.innerHTML =
             </td>
         </tr>
         <tr class="tableRow">
-            <td class="tableItemImg"><img src=${STORE_RECORDS[17].images[1]} alt=""></td>
+            <td class="tableItemImg"><img src=${STORE_RECORDS[17].images[0]} alt=""></td>
             <td class="tableItemTitle">${STORE_RECORDS[17].recordName} - ${STORE_RECORDS[17].artistName}</td>
             <td class="tableItemPrice">${STORE_RECORDS[17].price}$</td>
             <td class="quantityTd">
@@ -40,7 +40,7 @@ myCartTable.innerHTML =
             </td>
         </tr>
         <tr class="tableRow">
-            <td class="tableItemImg"><img src=${STORE_RECORDS[36].images[1]} alt=""></td>
+            <td class="tableItemImg"><img src=${STORE_RECORDS[36].images[0]} alt=""></td>
             <td class="tableItemTitle">${STORE_RECORDS[36].recordName} - ${STORE_RECORDS[36].artistName}</td>
             <td class="tableItemPrice">${STORE_RECORDS[36].price}$</td>
             <td class="quantityTd">
@@ -56,9 +56,9 @@ myCartTable.innerHTML =
     </article>`
 
 const totalAmountNumber = document.getElementById("totalAmountNumber");
-let cartPriceCounter=0;
-    
-function updateTotalPrice(){
+let cartPriceCounter = 0;
+
+function updateTotalPrice() {
     for (let i = 0; i < tableItemPrice.length; i++) {
         cartPriceCounter += parseInt(tableItemPrice[i].innerText) * quantityNumber[i].innerText;
     }
@@ -68,7 +68,7 @@ updateTotalPrice();
 
 for (let i = 0; i < addToCartBtn.length; i++) {
     addToCartBtn[i].onclick = () => {
-        cartPriceCounter=0;
+        cartPriceCounter = 0;
         quantityNumber[i].innerHTML++;
         updateTotalPrice();
     }
@@ -76,14 +76,10 @@ for (let i = 0; i < addToCartBtn.length; i++) {
 
 for (let i = 0; i < removeFromCartBtn.length; i++) {
     removeFromCartBtn[i].onclick = () => {
-        cartPriceCounter=0;
+        cartPriceCounter = 0;
         quantityNumber[i].innerHTML--;
         updateTotalPrice();
-        if(quantityNumber[i].innerHTML<= 0){
-            tableRow[i].style.display="none"
-        }
-        if(cartPriceCounter <= 0){
-            myCartTable.innerHTML = `<h1 id="emptyCartMsg">Your Cart Is Empty</h1>`
-        }
+        if (quantityNumber[i].innerHTML <= 0) tableRow[i].style.display = "none";
+        if (cartPriceCounter <= 0) myCartTable.innerHTML = `<h1 id="emptyCartMsg">Your Cart Is Empty</h1>`;
     }
 }

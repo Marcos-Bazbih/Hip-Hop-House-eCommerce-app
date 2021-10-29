@@ -92,24 +92,18 @@ span{
 }
 #sortByOptions h2{
     font-family: var(--headersFont);
-    font-size: 5vh;
+    font-size: 6vh;
     color: var(--mainPageColor1);
 }
-#sortByOptions button{
-    margin-left: 0.5%;
-    background: var(--mainPageColor3);
-    padding: 0px 2px;
-    border: 3px solid var(--mainPageColor1);
-    font-family: var(--navbarFont);
-    font-size: 3vh;
+#sortSelect, option{
+    margin-left: 2%;
+    background: var(--mainPageColor2);
+    color: var(--mainPageColor1);
+    text-align: center;
+    font-family: var(--headersFont);
+    font-size: 4vh;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.2s;
-}
-#sortByOptions button:hover{
-    background: var(--mainPageColor1);
-    border-color: var(--mainPageColor3);
-    color: var(--mainPageColor3);
 }
 #popUpBox{
     z-index: 1000;
@@ -188,7 +182,7 @@ span{
     width: 100%;
     height: fit-content;
 }
-.addToCartBtn, .removeFromCartBtn{
+.addToCartBtn{
     border-radius: 50%;
     padding: 8px 13px;
     background: var(--mainPageColor3);
@@ -198,13 +192,12 @@ span{
     cursor: pointer;
     transition: 0.2s;
 }
-.addToCartBtn:hover, .removeFromCartBtn:hover{
+.addToCartBtn:hover{
     background: var(--mainPageColor1);
     color: var(--mainPageColor3);
     border-color: var(--mainPageColor3);
 }
 .recordImages{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,15 +205,11 @@ span{
     height: 100%;
 }
 .record2Pics{
-    position: absolute;
     width: 95%;
     height: 70%;
     border-radius: 10%;
     border: 2px solid black;
     transition: 0.5s;
-}
-.record2Pics:last-of-type:hover{
-    opacity: 0;
 }
 footer{
     position: relative;

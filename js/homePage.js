@@ -12,11 +12,7 @@ registerForm.onsubmit = (event) => {
         alert("Welcome to our club");
     }
     else {
-        for (let i = 0; i < newsletterClub.length; i++) {
-            if (registerEmail.value == newsletterClub[i]) {
-                isUserInClub = true;
-            }
-        }
+        for(let registered of newsletterClub) if (registered == registerEmail.value) isUserInClub = true;
         if (isUserInClub != true) {
             newsletterClub.push(registerEmail.value);
             alert("Welcome to our club");
