@@ -2,9 +2,7 @@ let container2010sPage = document.getElementById("container");
 let recordCard = document.getElementsByClassName("recordCard");
 let record2Pics = document.getElementsByClassName("record2Pics");
 
-const currentPageRecords = [];
-
-for (let record of STORE_RECORDS) if (record.category == "2010s") currentPageRecords.push(record)
+const currentPageRecords = STORE_RECORDS.filter((item) =>  item.category == "2010s")
 
 const displayItems = () => {
     for (let record of currentPageRecords) {
