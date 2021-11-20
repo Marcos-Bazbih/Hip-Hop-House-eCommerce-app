@@ -5,6 +5,8 @@
 ### :ballot_box_with_check: Responsive to all devices.
 ### :ballot_box_with_check: 60 items included.
 
+# 📸
+
 <img src="./media/Git_Img/homePage_GitImg.png" width="70%">   
 
 
